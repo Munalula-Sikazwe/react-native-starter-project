@@ -28,7 +28,7 @@ const ListScreen = () => {
 };
 const styles = StyleSheet.create({
     textStyle:{
-        marginVertical: 50
+        marginVertical: 200
     }
 })
 
