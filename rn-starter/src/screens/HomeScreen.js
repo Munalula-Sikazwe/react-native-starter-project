@@ -9,9 +9,15 @@ const HomeScreen = ({navigation}) => {
           onPress={()=>navigation.navigate("Component")}
           title={"Go to Component Screen"}
       />
-          <TouchableOpacity onPress={()=>console.log("touched the touchable")}>
-              <Text>This is touchable</Text>
-          </TouchableOpacity>
+          <Button
+          onPress={()=>navigation.navigate("List")}
+          title={"Go to List Screen"}
+      />
+          <Button
+          onPress={()=>navigation.navigate("Image")}
+          title={"Go to Image Screen"}
+      />
+
       </View>);
 };
 
