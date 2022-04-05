@@ -1,14 +1,31 @@
 import React from 'react';
-import {Text,StyleSheet} from 'react-native';
+import {StyleSheet, Text,FlatList} from 'react-native';
+
 const ListScreen = () => {
+    const friends = [
+        {name: "John"},
+        {
+            name: "Mike"
+        },
+        {
+            name: "Sam"
+        },
+        {name: "Bob"}
+    ]
     return (
-        <Text>
-List Screen
-        </Text>
+        <FlatList
+            keyExtractor={(friend)=>friend.name}
+        data={friends}
+        renderItem={({item})=>
+            <Text>
+                {item.name}
+            </Text>
+        }
+        >
+
+        </FlatList>
     );
 };
-const styles = StyleSheet.create({
-
-})
+const styles = StyleSheet.create({})
 
 export default ListScreen;
