@@ -17,7 +17,7 @@ const ListScreen = () => {
             keyExtractor={(friend)=>friend.name}
         data={friends}
         renderItem={({item})=>
-            <Text>
+            <Text style={styles.textStyle}>
                 {item.name}
             </Text>
         }
@@ -26,6 +26,10 @@ const ListScreen = () => {
         </FlatList>
     );
 };
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    textStyle:{
+        marginVertical: 50
+    }
+})
 
 export default ListScreen;
