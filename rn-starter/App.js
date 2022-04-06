@@ -12,7 +12,7 @@ const navigator = createStackNavigator(
       Image:ImageScreen
   },
   {
-    initialRouteName: "Component",
+    initialRouteName: "Home",
     defaultNavigationOptions: {
       title: "App",
     },
