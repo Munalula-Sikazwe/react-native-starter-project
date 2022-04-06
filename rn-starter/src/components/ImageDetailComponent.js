@@ -1,9 +1,10 @@
+import {View,Text,StyleSheet,Image} from 'react-native';
 import React from 'react';
-import {View,Text,StyleSheet} from 'react-native';
-const ImageDetail = ({title}) => {
+const ImageDetail = ({title,image}) => {
 
     return (
         <View>
+            <Image source={image}/>
             <Text>{title}</Text>
         </View>
     );
