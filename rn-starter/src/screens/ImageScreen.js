@@ -11,9 +11,10 @@ const ImageScreen = () => {
         <FlatList
         data={data}
         keyExtractor={(data)=>data.title}
-        renderItem={({item})=><ImageDetail title={item.title} image={require(item.image)}>
+        renderItem={({item})=><ImageDetail title={item.title} image={item.image}/>
 
-        </ImageDetail>}
+       }
+
         >
 
         </FlatList>
