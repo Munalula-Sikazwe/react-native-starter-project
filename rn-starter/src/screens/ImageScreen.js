@@ -3,9 +3,9 @@ import {View,Text,StyleSheet,FlatList} from 'react-native';
 import ImageDetail from "../components/ImageDetailComponent";
 const ImageScreen = () => {
     const data = [
-        {title:"Forest"},
-        {title:"Beach"},
-        {title:"Mountain"}
+        {title:"Forest",image:"../../assets/036 images/forest.jpg"},
+        {title:"Beach",image:"../../assets/036 images/beach.jpg"},
+        {title:"Mountain",image:"../../assets/036 images/mountain.jpg"}
     ]
     return (
         <FlatList
