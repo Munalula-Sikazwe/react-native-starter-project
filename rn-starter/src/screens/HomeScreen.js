@@ -3,7 +3,7 @@ import { Text, StyleSheet,View,Button,TouchableOpacity} from "react-native";
 
 const HomeScreen = ({navigation}) => {
   return (
-      <View>
+      <View style={styles.viewAlignment}>
         <Text style={styles.text}>New HomeScreen</Text>
       <Button
           onPress={()=>navigation.navigate("Component")}
@@ -24,6 +24,9 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30
+  },
+  viewAlignment :{
+    marginVertical:50
   }
 });
 
