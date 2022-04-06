@@ -27,9 +27,9 @@ const ListScreen = () => {
                     {item.name}-{item.age}
                 </Text>
             }
-        >
+        />
 
-        </FlatList>
+
     );
 };
 const styles = StyleSheet.create({
