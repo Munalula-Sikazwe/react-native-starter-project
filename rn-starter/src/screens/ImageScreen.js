@@ -1,5 +1,6 @@
 import React from 'react';
-import {View,Text,StyleSheet} from 'react-native';
+import {View,Text,StyleSheet,FlatList} from 'react-native';
+import ImageDetail from "../components/ImageDetailComponent";
 const ImageScreen = () => {
     const data = [
         {title:"Forest"},
@@ -7,9 +8,15 @@ const ImageScreen = () => {
         {title:"Mountain"}
     ]
     return (
-        <View>
-            <Text>ImageScreen</Text>
-        </View>
+        <FlatList
+        data={data}
+        keyExtractor={(data)=>data.title}
+        renderItem={({item})=><ImageDetail title={item.title}>
+
+        </ImageDetail>}
+        >
+
+        </FlatList>
     );
 };
 
