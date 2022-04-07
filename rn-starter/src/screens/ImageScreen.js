@@ -12,7 +12,7 @@ const ImageScreen = () => {
         <FlatList
             data={data}
             keyExtractor={(data) => data.title}
-            renderItem={({item}) => <ImageDetail title={item.title} image={item.image}/>
+            renderItem={({item}) => <ImageDetail title={item.title} image={item.image} score={item.score}/>
 
             }
 
